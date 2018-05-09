@@ -17,11 +17,11 @@ To start server
 npm start
 ```
 
-#Collabarators
+# Collaborators
 
-..* Sri Harsha Gajavalli
-..* David Christie
-..* Kushal Borkar
-..* Soham Marik
-..* CallMeFib3r
+..* Sri Harsha Gajavalli [DongLee](https://github.com/SriHarshaGajavalli)
+..* David Christie [Crespoter](https://github.com/crespoter)
+..* Kushal Borkar [Lashuk1729](https://github.com/Lashuk1729)
+..* Soham Marik [soham1705](https://github.com/soham1705)
+..* CallMeFib3r [CallMeFib3r](https://github.com/CallMeFib3r)
 
