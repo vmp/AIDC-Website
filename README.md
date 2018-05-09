@@ -5,3 +5,14 @@ A simple website to show the recent events, blogs courses offered by our **_AI D
 Join our group virtually, and then you get notifications about their upcoming events, talks and hands-on about the latest AI topics.
 
 Website link: https://aidevelopercommunity.github.io/
+
+Install Node and npm before starting
+
+To install all dependencies:
+'''
+npm install
+'''
+To start server 
+'''
+npm start
+'''

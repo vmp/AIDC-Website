@@ -4,7 +4,8 @@
   "description": "AIDC Website",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+  	"start":"node app.js",
+    "test": "ECHO 'No test script specified'"
   },
   "repository": {
     "type": "git",
