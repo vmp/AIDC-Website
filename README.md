@@ -9,10 +9,10 @@ Website link: https://aidevelopercommunity.github.io/
 Install Node and npm before starting
 
 To install all dependencies:
-'''
+```
 npm install
-'''
+```
 To start server 
-'''
+```
 npm start
-'''
+```
