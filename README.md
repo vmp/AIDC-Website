@@ -16,3 +16,12 @@ To start server
 ```
 npm start
 ```
+
+#Collabarators
+
+..* Sri Harsha Gajavalli
+..* David Christie
+..* Kushal Borkar
+..* Soham Marik
+..* CallMeFib3r
+
