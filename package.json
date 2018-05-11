@@ -4,7 +4,7 @@
   "description": "AIDC Website",
   "main": "app.js",
   "scripts": {
-  	"start":"node app.js",
+    "start": "node app.js",
     "test": "ECHO 'No test script specified'"
   },
   "repository": {
@@ -24,6 +24,7 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "npm": "^6.0.1"
   }
 }
