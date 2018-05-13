@@ -19,22 +19,19 @@ app.use(express.static(path.join(__dirname, 'Public')));
 
 routes.setup(app);
 
-/*app.get('/', function (req, res) {
-  res.render('index');
-});*/
 app.post('/send-email', function (req, res) {
       let transporter = nodeMailer.createTransport({
           host: 'smtp.gmail.com',
           port: 465,
           secure: true,
           auth: {
-              user: 'soham.marik@gmail.com',
-              pass: '...'
+              user: 'aidevelopercommunity@gmail.com',
+              pass: 'thisistherealpassword@123'
           }
       });
       let mailOptions = {
           from: req.body.name+" <"+req.body.email+">", // sender address
-          to: "soham.marik@gmail.com", // list of receivers
+          to: "aidevelopercommunity@gmail.com", // list of receivers
           subject: "Message from "+req.body.name, // message
           text: req.body.message+"\n\n---\nReply to "+req.body.email,
       };
