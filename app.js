@@ -29,11 +29,11 @@ app.post('/send-email', function (req, res) {
           secure: true,
           auth: {
               user: 'soham.marik@gmail.com',
-              pass: '....'
+              pass: '..'
           }
       });
       let mailOptions = {
-          from: req.body.name+' <'+req.body.email+'>', // sender address
+          from: req.body.name+" <"+req.body.email+">", // sender address
           to: "soham.marik@gmail.com", // list of receivers
           subject: "Message from "+req.body.name, // message
           text: req.body.message,
@@ -44,7 +44,7 @@ app.post('/send-email', function (req, res) {
               return console.log(error);
           }
           console.log('Message %s sent: %s', info.messageId, info.response);
-              res.render('index');
+              res.send('sent');
           });
       });
 
