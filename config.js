@@ -1,4 +1,4 @@
 {
-	username:"youremailid@gmail.com",
+	username:"youremsid@gmail.com",
 	password:"insertyourpasswordhere"
 }
