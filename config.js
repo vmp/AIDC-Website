@@ -1,6 +1,6 @@
 {
 	emailconfig : {
-		username:"test@gmail.com",
+		username:"youremailid@gmail.com",
 		password:"yourpassword"
 	}
 }
