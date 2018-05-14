@@ -1,6 +1,6 @@
 {
 	emailconfig : {
-		username:"youremailid@gmail.com",
-		password:"yourpassword"
+		username:"aidevelopercommunity@gmail.com",
+		password:"cdia52Feb8102"
 	}
 }
