@@ -1,4 +1,4 @@
 {
-	username:"youremailid@gmail.com",
-	password:"insertyourpasswordhere"
+	username:"aidevelopercommunity@gmail.com",
+	password:"cdia52Feb8102"
 }
