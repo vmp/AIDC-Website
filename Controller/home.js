@@ -6,14 +6,15 @@ exports.index = function (req, res) {
 }
 
 exports.sendMail = function (req, res) {
-
+    var fs = require('fs');
+    var credentials  = JSON.parse(fs.readFileSync('config.js', 'utf8'));
     let transporter = nodeMailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
         secure: true,
         auth: {
-            user: 'aidevelopercommunity@gmail.com',
-            pass: 'thisistherealpassword@123'
+            user: credentials.emailconfig.username,
+            pass: credentials.emailconfig.password
         }
     });
 
@@ -29,7 +30,6 @@ exports.sendMail = function (req, res) {
             res.send('error');
             return console.log(error);
         }
-        console.log('Message %s sent: %s', info.messageId, info.response);
         res.send('sent');
     });
 }
