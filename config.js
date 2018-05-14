@@ -1,4 +1,6 @@
 {
-	username:"youremailid@gmail.com",
-	password:"insertyourpasswordhere"
+	emailconfig : {
+		username:"youremailid@gmail.com",
+		password:"yourpassword"
+	}
 }

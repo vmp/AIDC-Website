@@ -1,9 +1,12 @@
 var nodeMailer = require('nodemailer');
+var fs = require('fs');
 
 exports.index = function (req, res) {
     res.render('index.ejs', {});
 }
+
 exports.sendMail = function (req, res) {
+
     let transporter = nodeMailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
