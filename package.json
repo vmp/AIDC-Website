@@ -4,7 +4,7 @@
   "description": "AIDC Website",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "npm install && node app.js",
     "test": "ECHO 'No test script specified'"
   },
   "repository": {
