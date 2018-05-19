@@ -8,14 +8,11 @@ Website link: https://aidevelopercommunity.github.io/
 
 Install Node and npm before starting
 
-To install all dependencies:
-```
-npm install
-```
-To start server 
+Run:
 ```
 npm start
 ```
+This will install all dependencies and run the server.
 
 # Collaborators
 
