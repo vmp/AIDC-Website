@@ -17,6 +17,7 @@
     <!-- CSS Files
     ================================================== -->
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="css/Fermat.css" type="text/css">
     <link rel="stylesheet" href="css/jpreloader.css" type="text/css">
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/flexslider.css" type="text/css">
@@ -26,7 +27,8 @@
     <link rel="stylesheet" href="css/owl.theme.css" type="text/css">
     <link rel="stylesheet" href="css/owl.transitions.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.jpg" type="image/jpg" sizes="16x16">
     <!-- custom style css -->
     <link rel="stylesheet" href="css/custom-style.css" type="text/css">
 
@@ -38,7 +40,7 @@
     <link rel="stylesheet" href="css/rev-settings.css" type="text/css">
 
     <!-- load fonts -->
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
     <link rel="stylesheet" href="fonts/elegant_font/HTML_CSS/style.css" type="text/css">
     <link rel="stylesheet" href="fonts/et-line-font/style.css" type="text/css">
 </head>
@@ -46,15 +48,15 @@
 <body id="homepage">
 
     <!-- This section is for Splash Screen -->
-    <div id="jSplash">
-        <section class="selected">
-            Welcome to AIDC.
+    <div id="jSplash" >
+        <section class="selected" >
+            Hold tight
         </section>
         <section>
-            Lets get geared up to learn some cool stuff.
+            Almost there
         </section>
         <section>
-            Take a deep breath , we are almost there.
+            Breath in, breath out
         </section>
     </div>
     <!-- End of Splash Screen -->
@@ -73,8 +75,8 @@
                         <!-- logo begin -->
                         <h1 id="logo">
                             <a href="index.html">
-                                <img class="logo-1" src="images/logo.png" alt="">
-                                <img class="logo-2" src="images/logo-2.png" alt="">
+                                <img id = "navbarLogo"class="logo-1" src="images/trial1.png" alt="">
+                                <img class="logo-2" src="images/trial1.png" alt="">
                             </a>
                         </h1>
                         <!-- logo close -->
@@ -85,15 +87,16 @@
 
                         <!-- mainmenu begin -->
                         <nav>
-                            <ul id="mainmenu">  <!-- TODO : Change here after everything is done-->
+                            <ul id="mainmenu">
                                 <li><a href="#wrapper">Home</a></li>
-                                <li><a href="#section-about">About Us</a></li>
-                                <li><a href="#section-team">Team</a></li>
-                                <li><a href="#section-services">Services</a></li>
-                                <li><a href="#section-portfolio">Works</a></li>
-                                <li><a href="#section-testimonial">Testimonial</a></li>
+                                <li><a href="#section-about">About</a></li>
+                                <li><a href="#section-portfolio">Projects</a></li>
+                                <li><a href="#section-testimonial">Testimonials</a></li>
                                 <li><a href="#section-blog">Blog</a></li>
-                                <li><a href="#section-contact">Contact</a></li>
+                                <li><a href="#section-team">Life</a></li>
+                                <li><a href="#section-contact">Contact Us</a></li>
+
+
                             </ul>
                     </nav>
                     <!-- mainmenu close -->
@@ -110,17 +113,29 @@
 
             <!-- section begin -->
             <section id="section-welcome" class="full-height dark" data-stellar-background-ratio=".2">
-                <div class="center-y text-center">
-                    Meetups/Training Sessions/Tutorials
-                <div class="spacer-single"></div>
-                    <div class="text-slider border-deco">
-                        <div class="text-item">Welcome To <span class="id-color">AIDC</span></div>
-                        <div class="text-item">An open source community to <span class="id-color"> help you learn AI</span></div>
-                        <div class="text-item"><span class="id-color"><i class="icon-bike"></i></span>Scroll down to know more about us</div>
-                    </div>
-                    <div class="spacer-single"></div>
-                    <a href="#section-portfolio" class="btn btn-border btn-big">View Our Works</a>
+
+                <div>
+                    <div class="spacer-single"></div><br><br><br>
+                        <div class="text-slider">
+                            <div class="text-item">
+                            	 <img src = "images/logo-1.svg" id = "landingImage">
+                                <div id = "landingText">We are<br><span class="id-color">Artificial Intelligence <br> Developers</span></div>
+                            </div>
+                            <div class="text-item">
+                            	 <img src = "images/logo-1.svg" id = "landingImage">
+                                <div id = "landingText">An open-source <br>community <br>to <span class="id-color">help</span><br><span class="id-color">you learn AI</span></div>
+                            </div>
+
+                            <div class="text-item">
+                            	 <img src = "images/logo-1.svg" id = "landingImage">
+                                <div id = "landingText">Scroll down <br>to know<br>more about<br><span class="id-color">Team AIDC</span></div>
+                            </div>
+                        </div>
+
+
+
                 </div>
+
             </section>
             <!-- section close -->
 
@@ -139,7 +154,7 @@
                             </div>
                         </div>
                         <!-- featured box begin -->
-                        <div class="feature-box-small-icon box-fx center col-md-3 animated" data-animation="fadeInUp" data-delay="0">
+                        <div class="feature-box-small-icon box-fx center col-md-4 animated" data-animation="fadeInUp" data-delay="0">
                             <div class="inner">
                                 <div class="front">
                                     <i class="icon-genius"></i>
@@ -147,8 +162,8 @@
                                     <span>An obvious first question</span>
                                 </div>
                                 <div class="info">
-                                    We are a group of students who have embarked on a mission to build an AI-Powered environment. We are members of an open community and we organise
-                                    various events to propagate knowledge of AI among developers.                                	<br>
+                                    We are a group of students who have embarked on a mission to build an AI-powered environment. We are an open community and organise
+                                    various events to share our knowledge of AI among as many developers as possible.                                	<br>
                                     <a href="#" class="btn btn-border">Read More</a>
                                 </div>
                             </div>
@@ -156,15 +171,15 @@
                         <!-- featured box close -->
 
                         <!-- featured box begin -->
-                        <div class="feature-box-small-icon box-fx center col-md-3 animated" data-animation="fadeInUp" data-delay="200">
+                        <div class="feature-box-small-icon box-fx center col-md-4 animated" data-animation="fadeInUp" data-delay="200">
                             <div class="inner">
                                 <div class="front">
                                     <i class="icon-linegraph"></i>
-                                    <h3>Why we do it?</h3>
-                                    <span>Purpose of AIDC</span>
+                                    <h3>Purpose of AIDC</h3>
+                                    <span>Why we do it?</span>
                                 </div>
                                 <div class="info">
-                                    To foster interactions among students and professionals interested in AI. To create awareness about AI and its applications. To encourage individuals
+                                    We do it in order to foster interactions among students and professionals interested in AI, to create awareness about AI and its applications, and to encourage individuals
                                     to take an interest in open source society and extend learning among peers.                                 	<br>
                                     <a href="#" class=" btn btn-border">Read More</a>
                                 </div>
@@ -173,16 +188,16 @@
                         <!-- featured box close -->
 
                         <!-- featured box begin -->
-                        <div class="feature-box-small-icon box-fx center col-md-3 animated" data-animation="fadeInUp" data-delay="400">
+                        <div class="feature-box-small-icon box-fx center col-md-4 animated" data-animation="fadeInUp" data-delay="400">
                             <div class="inner">
                                 <div class="front">
                                     <i class="icon-layers"></i>
-                                    <h3>How are we doing it?</h3>
-                                    <span>AIDC's plan of action</span>
+                                    <h3>AIDC's plan of action</h3>
+                                    <span>How are we doing it</span>
                                 </div>
                                 <div class="info">
-                                    We organise meetups, tech discussions, and different coding programmes on Artificial Intelligence and its related fields. We bring amazing
-                                    people together to design and develop AI powered applications and share our work for the benefit of all.
+                                    We organise meetups, tech-discussions, and different coding programmes on Artificial Intelligence and related fields. We bring amazing
+                                    people together to design and develop AI powered web applications and share our work for the benefit of all.
                                 	<br>
                                     <a href="#" class="btn btn-border">Read More</a>
                                 </div>
@@ -227,154 +242,14 @@
                     </div>
                 </div>
             </section>
-            <!-- section close -->
-            <!-- section begin -->
-            <!--<section class="no-padding dark" data-stellar-background-ratio=".2">
-                <div class="de-video-container">
-                    <div class="de-video-content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6 col-md-offset-3 text-center">
-                                    <h1 class="animated" data-animation="fadeInUp">Ready To <span class="id-color">Rock?</span>
-                                        <span class="small-border animated" data-animation="fadeInUp"></span>
-                                    </h1>
-                                    <div class="animated" data-animation="fadeInUp">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    	<div class="spacer-single"></div>
-                                        <a href="#" class="btn btn-border" data-animation="fadeIn">Let's Rock!</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="de-video-overlay"></div>
-
-                    <!-- load your video here -->
-                    <!--<video autoplay="" loop="" muted="" poster="video/video-1.jpg">
-                        <source src="video/video-1.webm" type="video/webm" />
-                        <source src="video/video-1.mp4" type="video/mp4" />
-                        <source src="video/video-1.ogg" type="video/ogg" />
-                    </video>
-
-
-                </div>
-
-            </section>-->
-            <!-- section close -->
-
-            <!-- team section begin -->
-            <!--<section id="section-team">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <h1 class="animated" data-animation="fadeInUp">Meet The <span class="id-color">Team</span>
-                                <span class="small-border animated" data-animation="fadeInUp"></span>
-                            </h1>
-
-                            <div class="spacer-single"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <!-- team member -->
-                        <!--<div class="de-team-list col-md-3 animated" data-animation="fadeInUp" data-delay="0">
-                            <div class="team-pic">
-                                <img src="images/team/team_pic_1.jpg" class="img-responsive" alt="" />
-                            </div>
-                            <div class="team-desc col-md-12">
-                                <h3>John Smith</h3>
-                                <p class="lead">Project Manager</p>
-                                <div class="small-border"></div>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- team close -->
-
-                        <!-- team member -->
-                        <!--<div class="de-team-list col-md-3 animated" data-animation="fadeInUp" data-delay="0">
-                            <div class="team-pic">
-                                <img src="images/team/team_pic_2.jpg" class="img-responsive" alt="" />
-                            </div>
-                            <div class="team-desc col-md-12">
-                                <h3>Michael Dennis</h3>
-                                <p class="lead">Creative Director</p>
-                                <div class="small-border"></div>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- team close -->
-
-                        <!-- team member -->
-                        <!--<div class="de-team-list col-md-3 animated" data-animation="fadeInUp" data-delay="0">
-                            <div class="team-pic">
-                                <img src="images/team/team_pic_3.jpg" class="img-responsive" alt="" />
-                            </div>
-                            <div class="team-desc col-md-12">
-                                <h3>Sarah Michelle</h3>
-                                <p class="lead">Creative Staff</p>
-                                <div class="small-border"></div>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- team close -->
-
-                        <!-- team member -->
-                        <!--<div class="de-team-list col-md-3 animated" data-animation="fadeInUp" data-delay="0">
-                            <div class="team-pic">
-                                <img src="images/team/team_pic_4.jpg" class="img-responsive" alt="" />
-                            </div>
-                            <div class="team-desc col-md-12">
-                                <h3>Katty Wilson</h3>
-                                <p class="lead">Creative Staff</p>
-                                <div class="small-border"></div>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- team close -->
-
-                       <!-- <div class="clearfix"></div>
-
-                    </div>
-                </div>
-            </section>
-            <!-- section close -->
-
-            <!-- section begin -->
             <section id="fun-facts" class="dark" data-stellar-background-ratio=".2">
                 <div class="container">
 
                     <div class="row">
 
                         <div class="col-md-12 text-center">
-                            <h1 class="animated" data-animation="fadeInUp">Some <span class="id-color">Statistic</span></h1>
+                            <h1 class="animated" data-animation="fadeInUp">Progress <span class="id-color">so far...</span></h1>
                             <span class="small-border animated" data-animation="fadeInUp"></span>
                             <div class="spacer-single"></div>
                         </div>
@@ -399,7 +274,7 @@
                         <div class="col-md-3 animated" data-animation="fadeInRight" data-delay="0">
                             <div class="de_count">
                                 <i class="icon-piechart animated" data-animation="fadeInDown" data-delay="400"></i>
-                                <h3 class="timer" data-to="300" data-speed="2500">0</h3>
+                                <h3 class="timer" data-to="450" data-speed="2500">0</h3>
                                 <span>Members</span>
                             </div>
                         </div>
@@ -415,175 +290,7 @@
 
                 </div>
             </section>
-            <!-- section close -->
 
-            <!-- section begin -->
-            <!--<section id="section-services" class="no-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <h1 class="animated" data-animation="fadeInUp">Our <span class="id-color">Services</span>
-                                <span class="small-border animated" data-animation="fadeInUp"></span>
-                            </h1>
-
-                            <div class="spacer-single"></div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!-- feature box begin --
-                        <div class="feature-box-small-icon col-md-4 animated" data-animation="fadeInUp" data-delay="0">
-                            <div class="inner">
-                                <i class="icon-tools"></i>
-                                <div class="text">
-                                    <h3>Web Design</h3>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- feature box close -->
-
-                        <!-- feature box begin --
-                        <div class="feature-box-small-icon col-md-4 animated" data-animation="fadeInUp" data-delay="200">
-                            <div class="inner">
-                                <i class="icon-global"></i>
-                                <div class="text">
-                                    <h3>Branding</h3>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- feature box close -->
-
-                        <!-- feature box begin --
-                        <div class="feature-box-small-icon col-md-4 animated" data-animation="fadeInUp" data-delay="400">
-                            <div class="inner">
-                                <i class="icon-megaphone"></i>
-                                <div class="text">
-                                    <h3>Campaign</h3>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- feature box close -->
-
-                        <!-- feature box begin --
-                        <div class="feature-box-small-icon col-md-4 animated" data-animation="fadeInUp" data-delay="600">
-                            <div class="inner">
-                                <i class="icon-phone"></i>
-                                <div class="text">
-                                    <h3>Mobile Apps</h3>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- feature box close -->
-
-
-                        <!-- feature box begin --
-                        <div class="feature-box-small-icon col-md-4 animated" data-animation="fadeInUp" data-delay="800">
-                            <div class="inner">
-                                <i class="icon-magnifying-glass"></i>
-                                <div class="text">
-                                    <h3>SEO Services</h3>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- feature box close -->
-
-                        <!-- feature box begin --
-                        <div class="feature-box-small-icon col-md-4 animated" data-animation="fadeInUp" data-delay="1000">
-                            <div class="inner">
-                                <i class="icon-pencil"></i>
-                                <div class="text">
-                                    <h3>Copywriter</h3>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- feature box close --
-
-                        <div class="spacer-single"></div>
-
-                        <div class="col-md-12 text-center animated" data-animation="fadeInUp" data-delay="400">
-                            <img src="images/cubic_ss.png" class="img-responsive" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- section close -->
-
-
-            <!-- section begin -->
-            <!--<section id="section-skill-bar" class="dark" data-stellar-background-ratio=".2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h1 class="animated" data-animation="fadeInUp">Our <span class="id-color">Skill</span>
-                                <span class="small-border animated" data-animation="fadeInUp"></span>
-                            </h1>
-                            <div class="spacer-single"></div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3>Design</h3>
-                            <div class="de-progress">
-                                <div class="progress-bar" data-value="80%">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <h3>Development</h3>
-                            <div class="de-progress">
-                                <div class="progress-bar" data-value="90%">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="spacer-single"></div>
-
-                        <div class="col-md-6">
-                            <h3>Marketing</h3>
-                            <div class="de-progress">
-                                <div class="progress-bar" data-value="70%">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-6">
-                            <h3>Branding</h3>
-                            <div class="de-progress">
-                                <div class="progress-bar" data-value="60%">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="spacer-single"></div>
-
-                        <div class="col-md-6">
-                            <h3>Monitoring</h3>
-                            <div class="de-progress">
-                                <div class="progress-bar" data-value="65%">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <h3>Supporting</h3>
-                            <div class="de-progress">
-                                <div class="progress-bar" data-value="80%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- section begin -->
             <section id="section-portfolio" class="no-bottom">
                 <div class="container">
                     <div class="row">
@@ -601,9 +308,9 @@
                             <ul id="filters" class="animated" data-animation="fadeInUp" data-delay="200">
                                 <li><a href="#" data-filter="*" class="selected">Show All</a></li>
                                 <li><a href="#" data-filter=".illustration"></a></li>
-                                <li><a href="#" data-filter=".mobile">Mobile</a></li>
-                                <li><a href="#" data-filter=".photography">Photography</a></li>
-                                <li><a href="#" data-filter=".website">Website</a></li>
+                                <li><a href="#" data-filter=".mobile">Meetups</a></li>
+                                <li><a href="#" data-filter=".photography">Contests</a></li>
+                                <li><a href="#" data-filter=".website">Workshops</a></li>
                             </ul>
 
                         </div>
@@ -744,7 +451,7 @@
 
             <!-- section begin -->
             <section id="view-all-projects" class="call-to-action bg-color dark text-center" data-stellar-background-ratio=".2">
-                <a href="works.html" class="btn btn-border btn-big">View All Works</a>
+                <a href="#" class="btn btn-border btn-big">View All Works</a>
             </section>
             <!-- logo carousel section close -->
 
@@ -755,7 +462,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h1 class="animated" data-animation="fadeInUp">Customer <span class="id-color">Says</span></h1>
+                            <h1 class="animated" data-animation="fadeInUp">What our <span class="id-color">sponsors say</span></h1>
                             <span class="small-border animated" data-animation="fadeInUp"></span>
                             <div class="spacer-single"></div>
                         </div>
@@ -765,14 +472,14 @@
                         <div class="col-md-4 item">
                             <div class="de_testi">
                                 <blockquote>
-                                    <p>The support staff is AMAZING. Same day service. They also have built a GREAT theme that supports so many functions. You can tweak little things here and there and use its functionality for SO much more! What an AWESOME AWESOME AWESOME theme.</p>
+                                    <h2>GAME <br>CHANGING!!</h2>
                                 </blockquote>
                                 <div class="de_testi_by">
                                     <div class="de_testi_pic">
                                         <img src="images/testi_pic%20(1).jpg" alt="" class="img-circle">
                                     </div>
                                     <div class="de_testi_company">
-                                        <strong>Feldhouse</strong>, Customer
+                                        <strong>John Doe</strong>, Intel
                                     </div>
                                 </div>
                             </div>
@@ -877,97 +584,13 @@
                         </div>
                     </div>
 
-                    <div class="animated" data-animation="fadeInUp" data-delay="200">
-                        <div class="col-md-4 bloglist">
-                            <div class="post-content">
-                                <div class="post-image">
-                                    <div class="flexslider blog-slider">
-                                        <div class="overlay">
-                                        </div>
-                                        <ul class="slides">
-                                            <li>
-                                                <img src="images/blog/pic-blog-1.jpg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="images/blog/pic-blog-2.jpg" alt="" />
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                                <div class="date-box"><span class="day">20</span> <span class="month">SEP</span> </div>
-                                <div class="post-text">
-                                    <h3><a href="css/#">Best DSLR Camera</a></h3>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        <br>
-                                    <a href="#" class="btn-text">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 bloglist">
-                            <div class="post-content">
-                                <div class="post-image">
-                                    <div class="flexslider blog-slider">
-                                        <div class="overlay">
-                                        </div>
-                                        <ul class="slides">
-                                            <li>
-                                                <img src="images/blog/pic-blog-3.jpg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="images/blog/pic-blog-4.jpg" alt="" />
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                                <div class="date-box"><span class="day">18</span> <span class="month">SEP</span> </div>
-                                <div class="post-text">
-                                    <h3><a href="css/#">Playstation 4</a></h3>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        <br>
-                                    <a href="#" class="btn-text">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 bloglist">
-                            <div class="post-content">
-                                <div class="post-image">
-                                    <div class="flexslider blog-slider">
-                                        <div class="overlay">
-                                        </div>
-                                        <ul class="slides">
-                                            <li>
-                                                <img src="images/blog/pic-blog-5.jpg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="images/blog/pic-blog-6.jpg" alt="" />
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                                <div class="date-box"><span class="day">10</span> <span class="month">SEP</span> </div>
-                                <div class="post-text">
-                                    <h3><a href="css/#">Photography Tips</a></h3>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        <br>
-                                    <a href="#" class="btn-text">Read More</a>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="spacer-single"></div>
 
                         <div class="text-center">
                         	<a href="blog.html" class="btn btn-border">View All Posts</a>
                         </div>
-                    </div>
+                    <!--</div>-->
                 </div>
             </section>
             <!-- section close -->
@@ -979,46 +602,32 @@
                     <div class="row">
                         <div class="logo-carousel">
                                     <ul id="logo-carousel" class="slides">
-                                        <li>
+                                    	 <li>
                                             <div class="col-md-2">
-                                                <img src="images/logo/1.png" alt="">
+
                                             </div>
                                         </li>
                                         <li>
                                             <div class="col-md-2">
-                                                <img src="images/logo/2.png" alt="">
+                                                <img src="images/logo/intel.png" style="width: 10vw;height: 10vh">
                                             </div>
                                         </li>
-                                        <li>
+                                         <li>
                                             <div class="col-md-2">
-                                                <img src="images/logo/3.png" alt="">
+                                                <img src="images/logo/jb.jpg" style="width: 10vw;height: 10vh">
                                             </div>
                                         </li>
-                                        <li>
+                                         <li>
                                             <div class="col-md-2">
-                                                <img src="images/logo/4.png" alt="">
+                                                <img src="images/logo/fb.png" style="width: 10vw;height: 10vh">
                                             </div>
                                         </li>
-                                        <li>
+                                         <li>
                                             <div class="col-md-2">
-                                                <img src="images/logo/5.png" alt="">
+                                                <img src="images/logo/amazon.png" style="width: 10vw;height: 10vh">
                                             </div>
                                         </li>
-                                        <li>
-                                            <div class="col-md-2">
-                                                <img src="images/logo/6.png" alt="">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="col-md-2">
-                                                <img src="images/logo/7.png" alt="">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="col-md-2">
-                                                <img src="images/logo/8.png" alt="">
-                                            </div>
-                                        </li>
+
                                     </ul>
                         </div>
                         <!-- logo carousel close -->
@@ -1043,39 +652,39 @@
                             <div class="spacer-single"></div>
                         </div>
 
-<div class="col-md-8 animated" data-animation="fadeInUp" data-delay="200" data-speed="5">
+                        <div class="col-md-8 animated" data-animation="fadeInUp" data-delay="200" data-speed="5">
 
-    <form name="contactForm" id='contact_form' method="post" action='email.php'>
-        <div class="row">
-            <div class="col-md-6">
-                <div id='name_error' class='error'>Please enter your name.</div>
-                <div>
-                    <input type='text' name='name' id='name' class="form-control" placeholder="Your Name">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div id='email_error' class='error'>Please enter your valid E-mail ID.</div>
-                <div>
-                    <input type='text' name='email' id='email' class="form-control" placeholder="Your Email">
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div id='message_error' class='error'>Please enter your message.</div>
-                <div>
-                    <textarea name='message' id='message' class="form-control" placeholder="Your Message"></textarea>
-                </div>
-            </div>
-            <div id='mail_success' class='success'>Your message has been sent successfully.</div>
-            <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
-            <div class="col-md-12">
-                <p id='submit'>
-                    <input type='submit' id='send_message' value='Submit' class="btn btn-border">
-                </p>
-            </div>
-        </div>
-    </form>
+                            <form name="contactForm" id='contact_form' method="post" action='email.php'>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div id='name_error' class='error'>Please enter your name.</div>
+                                        <div>
+                                            <input type='text' name='name' id='name' class="form-control" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id='email_error' class='error'>Please enter your valid E-mail ID.</div>
+                                        <div>
+                                            <input type='text' name='email' id='email' class="form-control" placeholder="Your Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div id='message_error' class='error'>Please enter your message.</div>
+                                        <div>
+                                            <textarea name='message' id='message' class="form-control" placeholder="Your Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div id='mail_success' class='success'>Your message has been sent successfully.</div>
+                                    <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
+                                    <div class="col-md-12">
+                                        <p id='submit'>
+                                            <input type='submit' id='send_message' onclick="window.location.assign('mailto:aidevelopercommunity@gmail.com')" value='Submit' class="btn btn-border">
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
 
-</div>
+                        </div>
 
                         <div class="col-md-4">
                             <address>
@@ -1096,12 +705,11 @@
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <div class="social-icons">
-                                <a href="https://www.facebook.com/groups/1218055828325663/?ref=br_rs"><i class="fa fa-facebook fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                <a href="https://www.facebook.com/groups/1218055828325663/"><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href="https://plus.google.com/105942925167500718168"><i class="fa fa-google-plus fa-lg"></i></a>
                                 <a href="https://github.com/AIDeveloperCommunity"><i class="fa fa-github fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-dribbble fa-lg"></i></a>
+                                <a href="https://www.meetup.com/AI-Developer-Community/"><i class="fa fa-meetup fa-lg"></i></a>
+
                             </div>
                             <div class="spacer-single"></div>
                             © Copyright 2018 - AIDC Team
@@ -1116,6 +724,7 @@
 
     <!-- Javascript Files
     ================================================== -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jpreLoader.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -1132,7 +741,7 @@
     <script src="js/validation.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/designesia.js"></script>
-
+    <script src="js/addServiceWorker.js"></script>
     <!-- SLIDER REVOLUTION SCRIPTS  -->
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>

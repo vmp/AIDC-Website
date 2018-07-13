@@ -1,15 +1,15 @@
  $(document).ready(function(){
         $('#send_message').click(function(e){
-
+            
             //Stop form submission & check the validation
             e.preventDefault();
-
+            
             // Variable declaration
             var error = false;
             var name = $('#name').val();
             var email = $('#email').val();
             var message = $('#message').val();
-
+            
          	// Form field validation
             if(name.length == 0){
                 var error = true;
@@ -29,14 +29,14 @@
             }else{
                 $('#message_error').fadeOut(500);
             }
-
+            
             // If there is no validation error, next to process the mail function
             if(error == false){
                // Disable submit button just after the form processed 1st time successfully.
                 $('#send_message').attr({'disabled' : 'true', 'value' : 'Sending...' });
-
+                
 				/* Post Ajax function of jQuery to get all the data from the submission of the form as soon as the form sends the values to email.php*/
-                $.post("/send-email", $("#contact_form").serialize(),function(result){
+                $.post("email.php", $("#contact_form").serialize(),function(result){
                     //Check the result set from email.php file.
                     if(result == 'sent'){
                         //If the email is sent successfully, remove the submit button
@@ -51,5 +51,5 @@
                     }
                 });
             }
-        });
+        });    
     });
